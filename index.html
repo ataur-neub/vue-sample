@@ -7,12 +7,15 @@
 <script type="text/javascript">
 	// console.log(window);
 	console.log("start");
-	print("pront")
-	console.log("end");
+	print("pront",function(){
+		console.log("end");
+	});
+	
 
-	function print(s){
+	function print(s,callback){
 		setTimeout(function(){
 			console.log(s);
+			callback();
 		},1000);
 	}
 </script>
