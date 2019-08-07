@@ -4,20 +4,15 @@
 	<title>practice on vue</title>
 </head>
 <body>
+	<div id="root">{{ message }}</div>
+<script type="text/javascript" src="vue.js"></script>
 <script type="text/javascript">
-	var myjson={
-		"name":"ataur rahman selim",
-		"web":"selimwebdev.com",
-		"skills":["html","javascript","laravel","vue"],
-		"others":[
-		{"frndsName":"jahirul islam english department"},
-		{"profession":"school teacher"}
-		]
-	}
-
-	console.log(myjson.web);
-	console.log("\n");
-	console.log(myjson.skills);
+	var app=new Vue({
+		el:'#root',
+		data:{
+			message:"hello world"
+		}
+	});
 </script>
 </body>
 </html>
