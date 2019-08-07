@@ -5,19 +5,19 @@
 </head>
 <body>
 <script type="text/javascript">
-	// console.log(window);
-	console.log("start");
-	print("pront",function(){
-		console.log("end");
-	});
-	
-
-	function print(s,callback){
-		setTimeout(function(){
-			console.log(s);
-			callback();
-		},1000);
+	var myjson={
+		"name":"ataur rahman selim",
+		"web":"selimwebdev.com",
+		"skills":["html","javascript","laravel","vue"],
+		"others":[
+		{"frndsName":"jahirul islam english department"},
+		{"profession":"school teacher"}
+		]
 	}
+
+	console.log(myjson.web);
+	console.log("\n");
+	console.log(myjson.skills);
 </script>
 </body>
 </html>
