@@ -4,13 +4,21 @@
 	<title>practice on vue</title>
 </head>
 <body>
-	<div id="root">{{ message }}</div>
+	
+	<div id="root"> 
+		<h2>deliver speech</h2><br>
+	<input type="text" v-model="message"><br>
+	Your speech is {{ message }}</div>
 <script type="text/javascript" src="vue.js"></script>
 <script type="text/javascript">
 	var app=new Vue({
 		el:'#root',
 		data:{
 			message:"hello world"
+		},
+
+		mounted: function(){
+			console.log("mounted is working");
 		}
 	});
 </script>
